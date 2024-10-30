@@ -1,0 +1,5 @@
+.like-computy-admin > h2:first-child {
+    background: url(img/logo-svg.svg) no-repeat;
+    background-size: contain;
+    padding: 0 7px 0 20px;
+}

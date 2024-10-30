@@ -1,0 +1,189 @@
+.like_computy{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-radius: 8px;
+    display: flex;
+    margin: 30px 0 0;
+    justify-content: space-between;
+}
+
+.like_computy .emoji-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    color: #444;
+    flex: 1;
+    outline: none;
+    padding: 15px 0 0 0;
+    text-decoration: none;
+    font-size: 19px;
+}
+.lc-svg-icon{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.emoji-item:hover{
+    background: #ffe399;
+}
+.emoji-item::before {
+    content: '';
+    opacity: 1;
+    -webkit-transition: opacity 0.4s ease-out;
+    -o-transition: opacity 0.4s ease-out;
+    -moz-transition: opacity 0.4s ease-out;
+    transition: opacity 0.4s ease-out;
+    display: block;
+    position: absolute;
+}
+.emoji-item:hover::before {
+    content: attr(data-title);
+    position: absolute;
+    z-index: 2;
+    top: -24px;
+    left: 50%;
+    width: 120px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    height: 18px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 1;
+    text-align: center;
+}
+.cliick::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url("img/busy.svg");
+   background-size: cover;
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotation;
+    -o-animation-duration: 1s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-moz-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-o-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(720deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+.blednost{
+    opacity: 0.5;
+}
+/*pack1*/
+.pack1-s1 .lc-svg-icon{
+    background-image: url("img/pack1/like.svg");
+}
+.emoji-item:hover.pack1-s1::before,.emoji-item.pack1-s1.active::before {
+    color: #00C463;
+}
+.emoji-item:hover.pack1-s1,.emoji-item.pack1-s1.active {
+    background: #00C463;
+}
+.pack1-s6 .lc-svg-icon{
+    background-image: url("img/pack1/like.svg");
+    transform: rotate(180deg);
+}
+.emoji-item:hover.pack1-s6::before ,.emoji-item.pack1-s6.active::before {
+    color: #E35656;
+}
+.emoji-item:hover.pack1-s6,.emoji-item.pack1-s6.active {
+    background: #E35656;
+}
+.pack1-s2 .lc-svg-icon{
+    background-image: url("img/pack1/laugh.svg");
+}
+.emoji-item:hover.pack1-s2::before ,.emoji-item.pack1-s2.active::before {
+    color: #FFA800;
+}
+.emoji-item:hover.pack1-s2,.emoji-item.pack1-s2.active {
+    background: #FFA800;
+}
+.pack1-s3 .lc-svg-icon{
+    background-image: url("img/pack1/shocked.svg");
+}
+.emoji-item:hover.pack1-s3::before ,.emoji-item.pack1-s3.active::before{
+    color: #FB7926;
+}
+.emoji-item:hover.pack1-s3,.emoji-item.pack1-s3.active {
+    background: #FB7926;
+}
+.pack1-s4 .lc-svg-icon{
+     background-image: url("img/pack1/crying.svg");
+ }
+.emoji-item:hover.pack1-s4::before ,.emoji-item.pack1-s4.active::before{
+    color: #008CFF;
+}
+.emoji-item:hover.pack1-s4,.emoji-item.pack1-s4.active {
+    background: #008CFF;
+}
+.pack1-s5 .lc-svg-icon{
+    background-image: url("img/pack1/angry.svg");
+}
+.emoji-item:hover.pack1-s5::before  ,.emoji-item.pack1-s5.active::before{
+    color: #F75B4F;
+}
+.emoji-item:hover.pack1-s5,.emoji-item.pack1-s5.active {
+    background: #F75B4F;
+}
+
+/*pack1*/
